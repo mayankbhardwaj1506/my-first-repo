@@ -1,0 +1,239 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+header {
+    background-image: url(bg.jpg);
+    height: 630px;
+    width: 100%;
+    background-position: center;
+    background-size:cover;
+    
+    
+}
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    padding:25px 0;
+}
+.box {
+    background-color: black;
+    opacity: 0.65;
+    height: 630px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    
+}
+.logo {
+    width: 100px;
+}
+
+.btn1 {
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 7px;
+    padding: 5px 7px;
+    border: 2px solid gray;
+}
+
+.btn1:hover {
+   background-color: rgb(68, 68, 68);
+   
+}
+.btn2 {
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    padding: 5px 7px;
+    border: 1px solid transparent;
+}
+
+.txt {
+    font-family: 'Martel Sans', sans-serif;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100% - 100px);
+    gap: 25px;
+
+}
+
+.txt div {
+    padding: 0 10px;
+}
+.txt> :nth-child(1) {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.txt> :nth-child(2) {
+    font-weight: 400;
+    text-align: center;
+}
+
+.txt> :nth-child(3) {
+    font-weight: 400;
+    text-align: center;
+}
+.mail {
+    height: 27px;
+    width: calc(100px + 15vw);
+    border-radius: 7px;
+    background-color: transparent;
+    color: rgb(220, 220, 220);
+    border: 1px solid rgb(220, 220, 220);
+    padding: 0 20px;
+}
+.abcd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width:500px) {
+    .abcd {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+.line {
+    background-color: rgb(98, 98, 98);
+    width: 100%;
+    height: 5px;
+}
+.boxe {
+    color: white;
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.animate video {
+    position: absolute;
+    width: 300px;
+    padding: 52px;
+    padding-top: 60px;
+}
+
+.animate img {
+    position: relative ;
+    width: 400px;
+    left: 0;
+    top: 0;
+}
+
+.heading {
+    font-size: 50px; 
+    font-weight: bold;
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .boxe {
+        flex-direction: column;
+        padding: 35px 0;
+    }
+
+
+    .animate video {
+        width: 230px;
+        padding: 38px;
+    padding-top: 48px;
+    }
+
+    .animate img {
+        width: 305px;
+    }
+
+    .heading {
+        text-align: center;
+        font-size: 33px;
+    }
+}
+.boxes {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 45px 0;
+    
+}
+
+.boxs {
+    border: 1px solid transparent;
+    background-color: rgb(48, 48, 48);
+    width: 70%;
+    font-size: 20px;
+    padding: 25px 40px;
+    
+}
+.boxs {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+footer {
+    font-family:'Martel Sans', sans-serif ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+    gap: 40px;
+}
+.foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px 50px;
+    width: 900px;
+}
+
+.foot a {
+    color: white;
+    width: 150px;
+    font-size: 15px;
+}
+
+footer> :first-child {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    width:auto ;
+}
+
+@media only screen and (max-width:1200px){
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px 50px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .foot {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 50px;
+        width: auto;
+    }
+}
